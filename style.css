@@ -390,6 +390,7 @@ a img.aligncenter {
   display: inline-block;
   position: relative;
   text-align: left;
+  height: 73px;
 }
 .cd-words-wrapper b {
   display: inline-block;
