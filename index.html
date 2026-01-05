@@ -28,6 +28,7 @@
     <link rel="stylesheet" href="css/custom.css">
     <link rel="stylesheet" href="css/icons.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 	<script src="js/modernizr.js"></script> <!-- Modernizr -->
 
     <!--[if lt IE 9]>
@@ -81,35 +82,84 @@
       </div>
     </nav>
 	
-	<section id="home" class="main-banner parallaxie" style="background: url('uploads/banner-01.jpg')">
+	<!-- Dark Theme Option - Currently Active -->
+	<section id="home" class="main-banner">
+		<div class="animated-bg"></div>
+		<canvas id="particles-canvas"></canvas>
 		<div class="heading">
 			<h1>Hello, <br>I am Mohammed</h1>
+			<div class="home-info">
+				<p class="current-role"><i class="fa fa-briefcase"></i>Currently: Senior SWE @ Goldman Sachs</p>
+				<p class="location"><i class="fa fa-map-marker"></i>Salt Lake City, Utah</p>
+			</div>
 			<h3 class="cd-headline clip is-full-width">
-                <br><br>
+                <br>
 				<span></span>
-				<span class="cd-words-wrapper" style="text-align: center;">
-                    <b class="is-visible">Software Engineer at Goldman Sachs<br><br></b>
-					<b>former SDE <br><br>Aires Medical, NC, United States</b>
-                    <b>former SDE intern <br><br> WorkSpan, CA, United States</b>
+				<span class="cd-words-wrapper">
+                    <b class="is-visible">Building scalable financial systems<br><br></b>
+					<b>former SDE @ Aires Medical, NC<br><br></b>
+                    <b>former SDE Intern @ WorkSpan, CA<br><br></b>
 				</span>
 			</h3>
+			<div class="home-buttons">
+				<a href="#about" class="btn btn-primary btn-lg js-scroll-trigger">Learn More</a>
+				<a href="#services" class="btn btn-outline-light btn-lg js-scroll-trigger">View Projects</a>
+			</div>
 		</div>
 	</section>
+
+	<!-- Video Background Option - Commented Out -->
+	<!-- <section id="home" class="main-banner" style="position: relative; overflow: hidden; background: #000;">
+		<video autoplay muted loop playsinline style="position: absolute; top: 50%; left: 50%; min-width: 100%; min-height: 100%; width: auto; height: auto; transform: translate(-50%, -50%); z-index: 0; opacity: 0.3;">
+			<source src="https://cdn.coverr.co/videos/coverr-coding-on-a-laptop-3735/1080p.mp4" type="video/mp4">
+		</video>
+		<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(135deg, rgba(102, 126, 234, 0.7) 0%, rgba(118, 75, 162, 0.7) 100%); z-index: 1;"></div>
+		<div class="heading" style="position: relative; z-index: 2; animation: fadeInUp 1s ease-out;">
+			<h1 style="animation: fadeIn 1.2s ease-out; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">Hello, <br>I am Mohammed</h1>
+			<div style="margin: 30px 0; animation: fadeIn 1.5s ease-out;">
+				<p style="font-size: 20px; margin: 10px 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);"><i class="fa fa-briefcase" style="margin-right: 10px;"></i>Currently: Senior SWE @ Goldman Sachs</p>
+				<p style="font-size: 18px; margin: 10px 0; text-shadow: 1px 1px 3px rgba(0,0,0,0.5);"><i class="fa fa-map-marker" style="margin-right: 10px;"></i>Salt Lake City, Utah</p>
+			</div>
+			<h3 class="cd-headline clip is-full-width" style="animation: fadeIn 1.8s ease-out;">
+                <br>
+				<span></span>
+				<span class="cd-words-wrapper" style="text-align: center;">
+                    <b class="is-visible">Building scalable financial systems<br><br></b>
+					<b>former SDE @ Aires Medical, NC<br><br></b>
+                    <b>former SDE Intern @ WorkSpan, CA<br><br></b>
+				</span>
+			</h3>
+			<div style="margin-top: 40px; animation: fadeIn 2s ease-out;">
+				<a href="#about" class="btn btn-primary btn-lg js-scroll-trigger" style="margin: 10px; padding: 15px 30px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">Learn More</a>
+				<a href="#services" class="btn btn-outline-light btn-lg js-scroll-trigger" style="margin: 10px; padding: 15px 30px; border-radius: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">View Projects</a>
+			</div>
+		</div>
+		<style>
+			@keyframes fadeIn {
+				from { opacity: 0; }
+				to { opacity: 1; }
+			}
+			@keyframes fadeInUp {
+				from { opacity: 0; transform: translateY(30px); }
+				to { opacity: 1; transform: translateY(0); }
+			}
+		</style>
+	</section> -->
 
     <div id="about" class="section wb">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="message-box">                        
+                    <div class="message-box">
                         <h2><b>About Me</b></h2>
-                        <p style="text-align: justify;">I am a Senior Software Engineer at Goldman Sachs working in the Trade Processing Team in Salt Lake City, Utah. I have previously worked as a Software Engineer at Aires Medical in 2021
+                        <p class="text-justify">I am a Senior Software Engineer at Goldman Sachs working in the Trade Processing Team in Salt Lake City, Utah. I have previously worked as a Software Engineer at Aires Medical in 2021
                             and also as a Software Engineering Intern at WorkSpan during Summer 2020. I'm an energetic and passionate Computer Science Engineer with interests based in Software Engineering. A fast learner
                             looking forward to work in a challenging environment while refining technical and non-technical skills.
                             </p>
-                        <br><br><br>    
-                        <a href="https://www.linkedin.com/in/mohammed-mahaboob-khan-570615144/" class="fa fa-linkedin" target="_blank" style="font-size: xx-large;"></a>
-                        <a href="https://github.com/MdMahaboobKhan" class="fa fa-github" target="_blank" style="font-size: xx-large; border: solid thin;"></a>
-                        <a href="https://play.google.com/store/apps/developer?id=Mohammed+Mahaboob+Khan&hl=en_US" class="fa fa-android" style="font-size: xx-large;" target="_blank"></a>
+                        <br><br><br>
+                        <a href="https://www.linkedin.com/in/mohammed-mahaboob-khan-570615144/" class="fa fa-linkedin" target="_blank"></a>
+                        <a href="https://github.com/MdMahaboobKhan" class="fa fa-github" target="_blank"></a>
+                        <a href="https://play.google.com/store/apps/developer?id=Mohammed+Mahaboob+Khan&hl=en_US" class="fa fa-android" target="_blank"></a>
                             <br><br><br>
                         <!-- <a href="mkhan.pdf" class="sim-btn btn-hover-new" data-text="Download CV" download target="_blank"><span>Download CV</span></a> -->
                     </div><!-- end messagebox -->
@@ -146,89 +196,89 @@
             <div class="gallery-list-projects row">
 
                 <div class="col-md-4 gallery-grid proj_ml">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/Boolean-Search-Engine" target="_blank">Boolean Search Engine</a></h2>
-                        <p style="text-align: justify;">Designed and built an inverted index to map terms to documents and used this inverted index to build a Boolean Search Engine in Python3 that returns results to a Boolean query</p>
+                        <p class="text-justify">Designed and built an inverted index to map terms to documents and used this inverted index to build a Boolean Search Engine in Python3 that returns results to a Boolean query</p>
                         <p><b>Technologies:</b> Python3</p>
                         <p><b>Concepts:</b> NLP, inverted index, query processing</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_ml">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/Image-Classifier" target="_blank">Image Classifier</a></h2>
-                        <p style="text-align: justify;">Built a Neural Network and a Convolutional Neural Network using Python3 to recognize an image and classify it as one of the given classes.</p>
+                        <p class="text-justify">Built a Neural Network and a Convolutional Neural Network using Python3 to recognize an image and classify it as one of the given classes.</p>
                         <p><b>Technologies:</b> Python3</p>
                         <p><b>Concepts:</b> Machine Learning, Neural Networks</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_ml">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/-Breast-Cancer-Detection-" target="_blank">Cancer Detection</a></h2>
-                        <p style="text-align: justify;">Designed and built a classifier in Python3 using Logistic Regression to classify suspected breast cells in Wisconsin Diagnostic Breast Cancer (WDBC) dataset as benign or malignant.</p>
+                        <p class="text-justify">Designed and built a classifier in Python3 using Logistic Regression to classify suspected breast cells in Wisconsin Diagnostic Breast Cancer (WDBC) dataset as benign or malignant.</p>
                         <p><b>Technologies:</b> Python3</p>
                         <p><b>Concepts:</b> Machine Learning, Logistic Regression</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_ml">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/TEXT-SUMMARIZER" target="_blank">Text Summarizer</a></h2>
-                        <p style="text-align: justify;">Designed and developed an automatic text summarizer using Python3 that automatically generates the summary for any given input text document by finding the most meaningful sentences in the document.</p>
+                        <p class="text-justify">Designed and developed an automatic text summarizer using Python3 that automatically generates the summary for any given input text document by finding the most meaningful sentences in the document.</p>
                         <p><b>Technologies:</b> Python3</p>
                         <p><b>Concepts:</b> NLP</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_ml">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/ChatBot" target="_blank">ChatBot</a></h2>
-                        <p style="text-align: justify;">The end product of this project was a simple ChatBot that interacts with the user and tries to build a meaningful conversation. I trained this ChatBot over a set of 4000 conversations to try to mimic a normal person.</p>
+                        <p class="text-justify">The end product of this project was a simple ChatBot that interacts with the user and tries to build a meaningful conversation. I trained this ChatBot over a set of 4000 conversations to try to mimic a normal person.</p>
                         <p><b>Technologies:</b> Python3, Flask, HTML, CSS, JavaScript, jQuery</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_android">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://play.google.com/store/apps/details?id=com.something.sufiyankhan.tictactoe&hl=en_US" target="_blank">Tic-Tac-Toe</a></h2>
-                        <p style="text-align: justify;">This is an Android application that I developed and published on the Google Playstore which is an implementation of the Tic-Tac-Toe game. I built this application using Android Studio.</p>
+                        <p class="text-justify">This is an Android application that I developed and published on the Google Playstore which is an implementation of the Tic-Tac-Toe game. I built this application using Android Studio.</p>
                         <p><b>Technologies:</b> Android</p>
                         <p><b>Concepts:</b> Tic-Tac-Toe game</p>
                     </div>
                 </div>
 
                 <!-- <div class="col-md-4 gallery-grid proj_android">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2>Rememory</h2>
-                        <p style="text-align: justify;">I built this android application to help the users maintain a list of items and their locations in a database. The users can also search for the presence of a particular item in the database.</p>
+                        <p class="text-justify">I built this android application to help the users maintain a list of items and their locations in a database. The users can also search for the presence of a particular item in the database.</p>
                         <p><b>Technologies:</b> Android, SQLite</p>
                         <p><b>Concepts:</b> DBMS</p>
                     </div>
                 </div> -->
 
                 <div class="col-md-4 gallery-grid proj_android">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://play.google.com/store/apps/details?id=com.something.sufiyankhan.brainfeeds&hl=en_US" target="_blank">Concentration Analysis</a></h2>
-                        <p style="text-align: justify;">I built this android application to help users assess their concentration level and provide tips to improve their focus and concentration. The users are made to answer a set of questions which helps analyze their concentration level.</p>
+                        <p class="text-justify">I built this android application to help users assess their concentration level and provide tips to improve their focus and concentration. The users are made to answer a set of questions which helps analyze their concentration level.</p>
                         <p><b>Technologies:</b> Android</p>
                         <p><b>Concepts:</b> Fun, Recreation</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_web">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/Medical-store" target="_blank">Pharmacy DBMS</a></h2>
-                        <p style="text-align: justify;">This was a web application prototype that I built using HTML, CSS, PHP and JavaScript that makes use of a DBMS which interacts with end users and a database for a pharmacy.</p>
+                        <p class="text-justify">This was a web application prototype that I built using HTML, CSS, PHP and JavaScript that makes use of a DBMS which interacts with end users and a database for a pharmacy.</p>
                         <p><b>Technologies:</b> HTML, CSS, JavaScript, PHP</p>
                         <p><b>Concepts:</b> Relational DBMS</p>
                     </div>
                 </div>
 
                 <div class="col-md-4 gallery-grid proj_web">
-                    <div class="services-inner-box" style="min-height: 350px;">
+                    <div class="services-inner-box">
                         <h2><a href="https://github.com/MdMahaboobKhan/GitHub-Viewer" target="_blank">GitHub Viewer</a></h2>
-                        <p style="text-align: justify;">I built this web application to retrieve details from the GitHub profile of the entered user. The retrieved details include names of all repositories, stars and the language used.</p>
+                        <p class="text-justify">I built this web application to retrieve details from the GitHub profile of the entered user. The retrieved details include names of all repositories, stars and the language used.</p>
                         <p><b>Technologies:</b> HTML, CSS, JavaScript, AngularJS</p>
                         <p><b>Concepts:</b> Web Development</p>
                     </div>
@@ -238,7 +288,7 @@
         </div><!-- end container -->
     </div><!-- end section -->
 	
-	<div id="portfolio" class="section lb" style="background-color: #eaeaea;">
+	<div id="portfolio" class="section lb">
 		<div class="container">
 			<div class="section-title text-left">
                 <h3>Technical Skills</h3>
@@ -265,7 +315,7 @@
 							<i class="flaticon-idea-1"></i>
 						</div> -->
 						<h2>Programming</h2>
-						<p style="text-align: justify;"><ul>
+						<p class="text-justify"><ul>
                             <li>Python3</li>
                             <li>Java</li>
                             <li>C</li>
@@ -290,7 +340,7 @@
 							<i class="flaticon-idea-1"></i>
 						</div> -->
 						<h2>Courses</h2>
-						<p style="text-align: justify;"><ul>
+						<p class="text-justify"><ul>
                             <li>Blockchain</li>
                             <li>Machine Learning</li>
                             <li>Information Retrieval</li>
@@ -315,7 +365,7 @@
 							<i class="flaticon-idea-1"></i>
 						</div> -->
 						<h2>Others</h2>
-						<p style="text-align: justify;"><ul>
+						<p class="text-justify"><ul>
                             <li>Windows</li>
                             <li>Linux</li>
                             <li>AWS</li>
@@ -339,7 +389,7 @@
 							<i class="flaticon-idea-1"></i>
 						</div> -->
 						<h2>Databases</h2>
-						<p style="text-align: justify;"> <ul>
+						<p class="text-justify"> <ul>
                             <li>MYSQL</li>
                             <li>SQLite</li>
                         </ul></p>
@@ -367,10 +417,10 @@
                             <div class="desc">
                                 <h3>SOFTWARE ENGINEER <br>Aires Medical, North Carolina, United States</h3>
                                 <ul>
-                                    <li style="list-style: square;">Built custom Android OS for STMicroelectronics processor that communicates with a RTOS, integrating real-time therapy and safety control functions for medical device.</li>
-                                    <li style="list-style: square;">Designed and developed the User Interface for medical device in Android.</li>
-                                    <li style="list-style: square;">Developed a standalone Android application that communicates with an Arduino to control various hardware components.</li>
-                                    <li style="list-style: square;">Responsible for development and documentation of medical device software.</li>
+                                    <li >Built custom Android OS for STMicroelectronics processor that communicates with a RTOS, integrating real-time therapy and safety control functions for medical device.</li>
+                                    <li >Designed and developed the User Interface for medical device in Android.</li>
+                                    <li >Developed a standalone Android application that communicates with an Arduino to control various hardware components.</li>
+                                    <li >Responsible for development and documentation of medical device software.</li>
                                 </ul>
                             </div>
                             <!-- end testi-meta -->
@@ -384,12 +434,12 @@
                         <div class="testimonial clearfix">
                             <div class="desc">
                                 <h3> SOFTWARE ENGINEERING INTERN <br>WorkSpan, Foster City, California, United States</h3>
-                                <ul style="display:list-item">
-                                    <li style="list-style: square;"> Worked as a Software Engineering Intern at WorkSpan, California, United States from May 2020 to August 2020.</li>
-                                    <li style="list-style: square;"> Designed and developed a full-stack feature with Angular in the frontend and python in the backend to create API endpoints, that helps developers to port data over different instances.</li>
-                                    <li style="list-style: square;"> Contributed in the development of Admin Support tools used by Network Success and Professional Services teams in WorkSpan.</li>
-                                    <li style="list-style: square;"> Implemented a fault-injection system as a part of the Annual Company Hackathon to inject faults and validate the application behavior in presence of these faults.</li>
-                                    <li style="list-style: square;"> Assisted in scripting, tooling and bug-hunts to aid software development.</li>
+                                <ul >
+                                    <li > Worked as a Software Engineering Intern at WorkSpan, California, United States from May 2020 to August 2020.</li>
+                                    <li > Designed and developed a full-stack feature with Angular in the frontend and python in the backend to create API endpoints, that helps developers to port data over different instances.</li>
+                                    <li > Contributed in the development of Admin Support tools used by Network Success and Professional Services teams in WorkSpan.</li>
+                                    <li > Implemented a fault-injection system as a part of the Annual Company Hackathon to inject faults and validate the application behavior in presence of these faults.</li>
+                                    <li > Assisted in scripting, tooling and bug-hunts to aid software development.</li>
                                 </ul>
                             </div>
                             <!-- end testi-meta -->
@@ -404,9 +454,9 @@
                             <div class="desc">
                                 <h3>ENGINEERING INTERN <br>Siemens Gamesa Renewable Energy Pvt. Ltd.</h3>
                                 <ul>
-                                    <li style="list-style: square;">Worked as an intern from July,2018 to August,2018 at Siemens Gamesa, Bengaluru, India.</li>
-                                    <li style="list-style: square;">During my internship I built a ChatBot for my team website.</li>
-                                    <li style="list-style: square;">I also built a web application prototype for the employees to avail transport facilities at the company.</li>
+                                    <li >Worked as an intern from July,2018 to August,2018 at Siemens Gamesa, Bengaluru, India.</li>
+                                    <li >During my internship I built a ChatBot for my team website.</li>
+                                    <li >I also built a web application prototype for the employees to avail transport facilities at the company.</li>
                                 </ul>
                             </div>
                             <!-- end testi-meta -->
@@ -429,34 +479,34 @@
 
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
-						<div class="post-info" style="padding-top: 20px;">
+						<div class="post-info post-padding">
 							<h4>Event Management</h4>
-							<p style="text-align: justify;">Key member of the Event Management Team for the 17th VTU Inter-Collegiate Youth Festival, Bengaluru, India.</p>
+							<p class="text-justify">Key member of the Event Management Team for the 17th VTU Inter-Collegiate Youth Festival, Bengaluru, India.</p>
 						</div>
 					</div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
-						<div class="post-info" style="padding-top: 20px;">
+						<div class="post-info post-padding">
 							<h4>Sports Captain</h4>
-							<p style="text-align: justify;">Served as the sports captain for Presidency School, R.T.Nagar, Bengaluru, India</p>
+							<p class="text-justify">Served as the sports captain for Presidency School, R.T.Nagar, Bengaluru, India</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
-						<div class="post-info" style="padding-top: 20px;">
+						<div class="post-info post-padding">
 							<h4>Best Cricketer</h4>
-                            <p style="text-align: justify;">Won the Best Cricketer Award for the academic year 2012 - 2013</p>
+                            <p class="text-justify">Won the Best Cricketer Award for the academic year 2012 - 2013</p>
                             <br>
 						</div>
 					</div>
                 </div>
                 <div class="col-md-4 col-sm-6 col-lg-4">
 					<div class="post-box">
-						<div class="post-info" style="padding-top: 20px;">
+						<div class="post-info post-padding">
 							<h4>Deep Learning Special Interests Group</h4>
-							<p style="text-align: justify;">Active member of the Deep Learning Special Interests Group – University at Buffalo where we participate in
+							<p class="text-justify">Active member of the Deep Learning Special Interests Group – University at Buffalo where we participate in
                                 Kaggle challenges and conduct information sessions on implementing real world projects using Python,
                                 Tensorflow, Keras and other useful libraries.</p>
 						</div>
@@ -499,6 +549,8 @@
     <!-- ALL PLUGINS -->
     <script src="js/custom.js"></script>
     <script src="js/jquery.vide.js"></script>
+    <!-- Particle effect for home page -->
+    <script src="js/particles.js"></script>
 
 </body>
 </html>

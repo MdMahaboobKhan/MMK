@@ -1,2 +1,354 @@
 
 /** ADD YOUR AWESOME CODES HERE **/
+
+/* ============================================
+   CUSTOM THEME STYLING
+   ============================================ */
+
+/* Section backgrounds with gradients */
+#about.section {
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	padding: 80px 0;
+}
+
+#services.section {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	padding: 80px 0;
+	color: #fff;
+}
+
+#services .section-title h3,
+#services .section-title p {
+	color: #fff;
+}
+
+#portfolio.section {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+	padding: 80px 0;
+	color: #fff;
+}
+
+#portfolio .section-title h3,
+#portfolio .section-title p {
+	color: #fff;
+}
+
+/* Technical Skills cards */
+#portfolio .services-inner-box {
+	background: rgba(255, 255, 255, 0.95);
+	color: #333;
+}
+
+#portfolio .services-inner-box h2 {
+	color: #667eea;
+}
+
+.section-title h3 {
+	font-size: 36px;
+	font-weight: 700;
+	margin-bottom: 15px;
+}
+
+/* Enhanced cards */
+.services-inner-box {
+	background: rgba(255, 255, 255, 0.95);
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	color: #333;
+}
+
+/* Technical Projects specific sizing */
+#services .services-inner-box {
+	height: 420px !important;
+	overflow: hidden;
+}
+
+/* Technical Skills specific sizing */
+#portfolio .services-inner-box {
+	height: 400px !important;
+	overflow: hidden;
+}
+
+.services-inner-box:hover {
+	transform: translateY(-10px);
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.services-inner-box h2 {
+	color: #667eea;
+	font-size: 22px;
+	margin-bottom: 15px;
+}
+
+.services-inner-box h2 a {
+	color: #667eea;
+	text-decoration: none;
+	transition: color 0.3s ease;
+}
+
+.services-inner-box h2 a:hover {
+	color: #764ba2;
+}
+
+/* Grid row alignment for projects and skills */
+.gallery-list-projects .gallery-grid,
+.gallery-list .gallery-grid {
+	margin-bottom: 30px;
+}
+
+/* Filter buttons */
+.button-group button {
+	background: rgba(255, 255, 255, 0.2);
+	border: 2px solid #fff;
+	color: #fff;
+	padding: 10px 25px;
+	margin: 5px;
+	border-radius: 25px;
+	font-weight: 600;
+	transition: all 0.3s ease;
+}
+
+.button-group button:hover,
+.button-group button.active {
+	background: #fff;
+	color: #667eea;
+	transform: translateY(-2px);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Experience timeline enhancement */
+.experience-box {
+	background: #fff;
+	border-radius: 15px;
+	padding: 25px;
+	margin-bottom: 20px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-box:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* About section enhancements */
+.message-box {
+	background: #fff;
+	padding: 40px;
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+	height: 100%;
+}
+
+.message-box h2 {
+	color: #667eea;
+	margin-bottom: 25px;
+}
+
+/* Social icons - keep original styling */
+#about .message-box .fa {
+	margin: 0 10px;
+	transition: all 0.3s ease;
+	font-size: xx-large;
+}
+
+#about .message-box .fa-github {
+	border: solid thin;
+}
+
+#about .message-box .fa:hover {
+	transform: scale(1.2);
+}
+
+/* About section image */
+#about .img-fluid {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+/* Additional Activities */
+#blog.section {
+	background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+	padding: 80px 0;
+}
+
+.post-box {
+	background: #fff;
+	border-radius: 15px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+	margin-bottom: 30px;
+}
+
+.post-box:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.post-info h4 {
+	color: #667eea;
+	font-weight: 700;
+}
+
+/* Image rounded corners */
+.img-rounded {
+	border-radius: 15px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Professional Experience */
+#testimonials.section {
+	background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+	padding: 80px 0;
+}
+
+.testimonial {
+	background: #fff;
+	border-radius: 15px;
+	padding: 30px;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.testimonial:hover {
+	transform: translateY(-5px);
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial .desc h3 {
+	color: #667eea;
+	font-weight: 700;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.testimonial .desc ul li {
+	margin-bottom: 10px;
+	line-height: 1.6;
+	color: #333;
+}
+
+/* ============================================
+   HOME PAGE STYLES
+   ============================================ */
+
+/* Home page banner */
+#home.main-banner {
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+	position: relative;
+	overflow: hidden;
+}
+
+#particles-canvas {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 0;
+}
+
+#home .heading {
+	position: relative;
+	z-index: 1;
+	animation: fadeInUp 1s ease-out;
+}
+
+#home .heading h1 {
+	animation: fadeIn 1.2s ease-out;
+}
+
+#home .heading .home-info {
+	margin: 30px 0;
+	animation: fadeIn 1.5s ease-out;
+}
+
+#home .heading .home-info p {
+	margin: 10px 0;
+}
+
+#home .heading .home-info p.current-role {
+	font-size: 20px;
+}
+
+#home .heading .home-info p.location {
+	font-size: 18px;
+}
+
+#home .heading .home-info i {
+	margin-right: 10px;
+}
+
+#home .heading h3.cd-headline {
+	animation: fadeIn 1.8s ease-out;
+}
+
+#home .heading .cd-words-wrapper {
+	text-align: center;
+}
+
+#home .heading .home-buttons {
+	margin-top: 40px;
+	animation: fadeIn 2s ease-out;
+}
+
+#home .heading .home-buttons .btn {
+	margin: 10px;
+	padding: 15px 30px;
+	border-radius: 30px;
+	box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Text alignment utilities */
+.text-justify {
+	text-align: justify;
+}
+
+/* Portfolio section background override */
+#portfolio.section.lb {
+	background-color: #eaeaea;
+}
+
+/* List styles */
+.testimonial .desc ul li {
+	list-style: square;
+}
+
+.post-info.post-padding {
+	padding-top: 20px;
+}
+
+/* ============================================
+   HOME PAGE ANIMATIONS
+   ============================================ */
+
+@keyframes fadeIn {
+	from { opacity: 0; }
+	to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+	from { opacity: 0; transform: translateY(30px); }
+	to { opacity: 1; transform: translateY(0); }
+}
+
+.animated-bg {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+	background-size: 400% 400%;
+	animation: gradientShift 15s ease infinite;
+	z-index: -1;
+}
+
+@keyframes gradientShift {
+	0% { background-position: 0% 50%; }
+	50% { background-position: 100% 50%; }
+	100% { background-position: 0% 50%; }
+}
