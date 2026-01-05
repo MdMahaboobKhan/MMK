@@ -86,7 +86,7 @@
         $(".preloader").on(600).fadeOut("slow");
     });
 
-	// Gallery Filter
+	// Gallery Filter for Skills
         var Container = $('.container');
         Container.imagesLoaded(function () {
             var portfolio = $('.gallery-menu');
@@ -98,6 +98,22 @@
                 });
             });
             var $grid = $('.gallery-list').isotope({
+                itemSelector: '.gallery-grid'
+            });
+
+        });
+
+	// Gallery Filter for Projects
+        Container.imagesLoaded(function () {
+            var projectPortfolio = $('.gallery-menu-projects');
+            projectPortfolio.on('click', 'button', function () {
+                $(this).addClass('active').siblings().removeClass('active');
+                var filterValue = $(this).attr('data-filter');
+                $gridProjects.isotope({
+                    filter: filterValue
+                });
+            });
+            var $gridProjects = $('.gallery-list-projects').isotope({
                 itemSelector: '.gallery-grid'
             });
 
