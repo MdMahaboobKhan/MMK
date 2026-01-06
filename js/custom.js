@@ -98,8 +98,11 @@
                 });
             });
             var $grid = $('.gallery-list').isotope({
-                itemSelector: '.gallery-grid'
+                itemSelector: '.gallery-grid',
+                filter: '.gal_a'  // Default to Programming
             });
+            // Set Programming button as active by default
+            $('.gallery-menu button[data-filter=".gal_a"]').addClass('active').siblings().removeClass('active');
 
         });
 
@@ -114,8 +117,11 @@
                 });
             });
             var $gridProjects = $('.gallery-list-projects').isotope({
-                itemSelector: '.gallery-grid'
+                itemSelector: '.gallery-grid',
+                filter: '.proj_web'  // Default to Web Apps
             });
+            // Set Web Apps button as active by default
+            $('.gallery-menu-projects button[data-filter=".proj_web"]').addClass('active').siblings().removeClass('active');
 
         });
 	

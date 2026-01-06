@@ -49,11 +49,11 @@ A modern, responsive portfolio website showcasing my professional experience, te
 MMK/
 ├── index.html              # Main HTML file
 ├── README.md              # Project documentation
+├── style.css              # Base styles
 ├── css/
 │   ├── custom.css         # Custom theme and component styles
 │   ├── responsive.css     # Responsive design rules
-│   ├── icons.css          # Icon fonts
-│   └── style.css          # Base styles
+│   └── icons.css          # Icon fonts
 ├── js/
 │   ├── custom.js          # Main JavaScript functionality
 │   ├── particles.js       # Particle effect for home page

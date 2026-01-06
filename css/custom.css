@@ -352,3 +352,31 @@
 	50% { background-position: 100% 50%; }
 	100% { background-position: 0% 50%; }
 }
+
+/* ============================================
+   MOBILE RESPONSIVE FIXES
+   ============================================ */
+
+/* Fix navbar height on mobile devices */
+@media (max-width: 767px) {
+	#mainNav {
+		padding-top: 10px;
+		padding-bottom: 10px;
+	}
+
+	.navbar-collapse {
+		background-color: rgba(51, 51, 51, 0.95);
+		padding: 10px;
+		border-radius: 5px;
+		margin-top: 10px;
+	}
+
+	/* Adjust home section top padding to account for fixed navbar */
+	#home.main-banner {
+		padding-top: 80px;
+	}
+
+	#home .heading {
+		padding-top: 40px;
+	}
+}
